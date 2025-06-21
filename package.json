@@ -14,7 +14,7 @@
     "init-index-local": "node builder/init.js --local",
     "init-index-remote": "node builder/init.js --remote",
     "watch": "npm-run-all init-index-local watch:parcel",
-    "build": "npm-run-all init-index-remote build:parcel"
+    "build": "npm-run-all init-index-local build:parcel"
   },
   "repository": {
     "type": "git",
@@ -35,7 +35,8 @@
     "@parcel/transformer-sass": "^2.6.2",
     "@parcel/transformer-webmanifest": "^2.6.2",
     "parcel": "^2.6.2",
-    "sass": "^1.53.0"
+    "sass": "^1.53.0",
+    "svgo": "^3.3.2"
   },
   "dependencies": {
     "axios": "^0.27.2",
